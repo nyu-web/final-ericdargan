@@ -20,7 +20,7 @@ I'm hoping to do a full page video for this page.
 This blog will probably be on a three column grid that compresses down to less columns as the device gets smaller.
 
 ## Tech Component List
-HTML
-SASS > CSS
+HTML,
+SASS > CSS,
 Javascript
 
