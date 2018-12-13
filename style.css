@@ -1,0 +1,368 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.window {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.font1 {
+  font-family: Charter;
+}
+
+.font2 {
+  font-family: Futura;
+}
+
+.red {
+  color: #B22525;
+}
+
+.nav_button {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #B22525;
+  align-items: center;
+  justify-content: center;
+  font-family: Futura;
+}
+
+a {
+  text-decoration: none;
+  color: #B22525;
+}
+
+a:hover {
+  opacity: .75;
+  text-decoration: underline;
+}
+
+.page_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.logo_web {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  padding: 25px;
+}
+
+.page_left {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(7,1fr);
+  max-height: 100vh;
+}
+
+.home_right {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5,1fr);
+  //border-left: 1px solid black;
+}
+
+.home_background {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/gugg.JPG");
+}
+
+.vertical_text {
+  text-align: center;
+  transform: rotate(90deg);
+  grid-row-start: 3;
+  grid-column: 3/4;
+}
+
+.home_info {
+  grid-row: 3 / 4;
+  grid-column: 3 / 6;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+
+.home_h1 {
+  display: inline-block;
+  font-size: 1.25rem;
+  width: 20vw;
+  height: auto;
+  max-width: 160px;
+  text-align: center;
+}
+
+#home_film {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+#home_journal {
+  grid-row: 3 / 4;
+  grid-column: 7 / 8;
+}
+
+#home-gallery {
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+}
+
+.red_nav_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#arrow_bg {
+  width: 50%;
+  height: auto;
+}
+
+
+/* _____________________________________________Start of Info Page */
+
+.info_background {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/profile.JPG");
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
+}
+
+.info_right {
+  display: grid;
+  width: 100%;
+  max-height: 100vh;
+  height: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6,1fr);
+  //border-left: 1px solid black;
+}
+
+.info_main {
+  display:flex;
+  flex-wrap: wrap;
+  //border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  grid-column: 4 / 10;
+  grid-row: 3 / 5;
+}
+
+#info_journal {
+  grid-row: 3 / 5;
+  grid-column: 12 / 13;
+}
+
+.info_tile {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+}
+
+.tile_text_box {
+  padding: 1px;
+  width: 85%;
+  height: 85%;
+}
+
+.tile_heading {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.tile_text {
+  margin-top: -5px;
+  margin-bottom: -5px;
+  font-size: 8px;
+  text-decoration: none;
+}
+
+/* _____________________________________________Start of Journal Page */
+
+
+.page_grid {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(14, 1fr);
+}
+
+#journal-gallery {
+  grid-column: 7 / 9;
+  grid-row: 17 / 19;
+}
+
+#journal_info {
+  grid-row: 9 / 11;
+  grid-column: 14 / 15;
+}
+
+#journal_film {
+  grid-row: 9 / 11;
+  grid-column: 1 / 2;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+}
+
+.col-1 {
+  grid-row: 6 / 14;
+  grid-column: 3 / 5;
+  border-right: 1px solid #B22525;
+}
+
+.col-2 {
+  grid-row: 4 / 16;
+  grid-column: 5 / 7;
+  border-right: 1px solid #B22525;
+}
+
+.col-3 {
+  grid-row: 6 / 14;
+  grid-column: 7 / 9;
+
+}
+
+.col-4 {
+  grid-row: 4 / 16;
+  grid-column: 9 / 11;
+  border-left: 1px solid #B22525;
+}
+
+.col-5 {
+  grid-row: 6 / 14;
+  grid-column: 11 / 13;
+  border-left: 1px solid #B22525;
+}
+
+.post {
+  text-align: center;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 75px;
+  //background-color: black;
+  border: 1px solid black;
+}
+
+.post_heading {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.description {
+  font-size: .65rem;
+  color: #B22525;
+  font-family: "Avenir Next";
+  font-weight: bold;
+  line-height: 10px;
+}
+
+span:hover {
+  background-color: black;
+}
+
+
+/* _____________________________________________Start of Film Page */
+
+/* #video {
+    object-fit: cover;
+} */
+
+#videoContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.controls {
+    display: none;
+    /* width: 100%;
+    height: auto;
+    display: flex; */
+}
+
+figure {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+#playpause {
+
+}
+
+input, button, submit {
+     border:none;
+     background: none;
+     color: inherit;
+	 padding: 0;
+	 font: inherit;
+	 cursor: pointer;
+	 outline: inherit
+ }
+
+#play {
+    width: 100px;
+    height: 100px;
+    grid-column: 7 / 9;
+    grid-row: 15 / 17;
+}
+
+.gallery_html {
+    overflow: scroll;
+}
+
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.tn {
+    max-width: 450px;
+    height: auto;
+}
